@@ -10,6 +10,11 @@ body {
     background-color: #F5F5F5;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /* Header and nav */
 
@@ -220,23 +225,69 @@ nav {
 }
 
 .image-container img {
-     width: 295px;
+    width: 295px;
     height: 387px;
     border-radius: 20px;
 }
 
-.hero-svg1{
+.hero-svg1 {
     top: 340px;
     right: 680px;
     position: absolute;
 }
-.hero-svg2{
+
+.hero-svg2 {
     top: 340px;
     right: 360px;
     position: absolute;
 }
 
+
+/* Social section */
+
+.social {
+    background-color: #F5F5F5;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social-container {
+    width: 496px;
+    height: 130px;
+    position: absolute;
+    top: 604px;
+    left: 822px;
+
+    border-radius: 16px;
+    padding: 20px 24px;
+    gap: 12px;
+    opacity: 1;
+    background-color: white;
+}
+
+.social-container p {
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #000000;
+  
+}
+.icons{
+     width: 448px;
+  height: 48px;
+  display: flex;
+  gap: 32px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+
 /* Fonts */
+
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
