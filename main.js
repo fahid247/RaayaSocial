@@ -15,3 +15,8 @@
                 });
             }
         })();
+
+        function toggleFaq(questionEl) {
+      const item = questionEl.closest('.faq-item');
+      item.classList.toggle('open');
+    }
