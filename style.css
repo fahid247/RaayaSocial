@@ -1128,7 +1128,7 @@ nav {
     text-align: center;
     color: #1D2939;
     margin-top: 24px;
-   
+
 
 }
 
@@ -1176,7 +1176,7 @@ nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
-     padding: 0px 10px;
+    padding: 0px 10px;
 }
 
 .faq-answer p {
@@ -1209,6 +1209,231 @@ nav {
 .faq-item.open .icon-minus {
     display: block;
 }
+
+
+/* Footer */
+
+
+.footer {
+    width: 100%;
+    padding: 64px 96px;
+    color: #2d3748;
+    background-color: white;
+    margin-top: 48px;
+}
+
+.footer__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    margin-bottom: 64px;
+}
+
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__logo {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -1px;
+    font-family: Inter;
+    line-height: 132%;
+    letter-spacing: -1%;
+    vertical-align: middle;
+
+}
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__col-heading {
+    font-size: 1.05rem;
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    line-height: 132%;
+    letter-spacing: -2%;
+    text-transform: capitalize;
+    color: #000000;
+
+}
+
+.footer__description {
+    line-height: 1.65;
+    font-size: 0.875rem;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: 0%;
+    color: #344054;
+
+}
+
+.footer__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 8px;
+}
+
+
+.footer__links,
+.footer__services {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__nav-list a {
+    text-decoration: none;
+    color: #344054;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 212%;
+    letter-spacing: 0%;
+
+}
+
+.footer__nav-list a:hover {
+    color: #9333ea;
+}
+
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__input,
+.footer__textarea {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    color: #2d3748;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+}
+
+.footer__input::placeholder,
+.footer__textarea::placeholder {
+    color: #9ca3af;
+}
+
+.footer__input:focus,
+.footer__textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+}
+
+.footer__textarea {
+    resize: none;
+    height: 88px;
+}
+
+.footer__submit {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: background-color 0.2s;
+}
+
+.footer__submit:hover {
+    background-color: #000000;
+}
+
+.footer__submit-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+
+.footer__bottom {
+    padding-top: 32px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 64px 48px;
+    }
+
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 64px 16px;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__actions {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        flex: 1;
+        text-align: center;
+    }
+}
+
 
 /* Fonts */
 
