@@ -268,22 +268,108 @@ nav {
 
 .social-container p {
     font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0;
-  color: #000000;
-  
-}
-.icons{
-     width: 448px;
-  height: 48px;
-  display: flex;
-  gap: 32px;
-  opacity: 1;
-  margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000000;
+
 }
 
+.icons {
+    width: 448px;
+    height: 48px;
+    display: flex;
+    gap: 32px;
+    opacity: 1;
+    margin-top: 12px;
+}
+
+
+/* Brands */
+
+
+.brands {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    background-color: white;
+}
+
+.frame {
+    width: 1440px;
+    height: 226px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  
+}
+
+.brands-left {
+    width: 300px;
+    height: 78px;
+    
+}
+.brands-left h6{
+    font-size: 32px;
+    font-weight: 600;
+}
+.brands-left p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1D2939;
+}
+
+.line {
+  width: 130px;
+  height: 0;
+  opacity: 1;
+  margin-top: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      #000000 49.44%,
+      rgba(102, 102, 102, 0) 100%
+    )
+    1;
+
+  transform: rotate(-90deg);
+}
+
+.brands-right{
+    width: 1216px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  background: white;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 40px;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 /* Fonts */
 
